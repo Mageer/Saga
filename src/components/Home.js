@@ -1,42 +1,34 @@
 import React from 'react';
-import { Grid, Box } from '@material-ui/core';
-import banner from '../media/banner.jpg';
+import { Element,} from 'react-scroll';
+import { Grid } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import Navbar from './Navbar';
-import Footer from './Footer';
+import Banner from './Banner';
 import Shiraz from './wines/Shiraz';
 import PinotNoir from './wines/PinotNoir';
 import Cabernet from './wines/Cabernet';
+import Footer from './Footer';
+
+const useStyles = makeStyles({
+});
 
 function Home() {
+  const classes = useStyles();
   return(
-    <Grid
-      container
-      direction="row"
-      justify="center"
-      alignItems="center"
-    >
+    <Grid container direction="row" justify="center" alignItems="center">
       <Navbar />
+      <Grid item xs={12}><Banner /></Grid> 
 
-      <Grid item xs={12} style={{ textAlign: 'center' }}>
-          <img src={banner} alt="Header" style={{ width: '100%', height: 'auto'}}/>
-      </Grid>
-      
-      <Grid item xs={12}>
-        <Shiraz />
-      </Grid>
-      
-      <Grid item xs={12}><div style={{height:'100px'}}></div></Grid>
+      <Element name='shiraz'></Element>
+      <Grid item xs={12}><Shiraz /></Grid>
 
-      <Grid item xs={12}>
-        <PinotNoir />
-      </Grid>
+      <Element name='pinotNoir'></Element>
+      <Grid item xs={12}><PinotNoir /></Grid>
 
-      <Grid item xs={12}><div style={{height:'100px'}}></div></Grid>
+      <Element name='cabernet'></Element>
+      <Grid item xs={12}><Cabernet /></Grid>
 
-      <Grid item xs={12}>
-        <Cabernet />
-      </Grid>
-
+      <Element name='contact'></Element>
       <Footer />
     </Grid>
   );
