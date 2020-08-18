@@ -7,7 +7,7 @@ import {
   ButtonGroup,
   Button
 } from '@material-ui/core';
-import sagaLogo from '../media/saga_logo.jpg';
+import sagaLogo from '../media/saga_logo_white_thick.png';
 
 const useStyles = makeStyles({
   navbar: {
