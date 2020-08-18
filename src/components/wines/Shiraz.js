@@ -1,16 +1,16 @@
 import React from 'react';
-import LeftElement from '../elements/LeftElement';
+import RightElement from '../elements/LeftElement';
 import shirazImg from '../../media/shiraz.png';
 
 function Shiraz() {
-  const name = 'Shiraz';
-  const description = `Lovely, easy, medium bodied, fruits.
-    Great value for money. And what a fantastic cellar door experience on a beautiful Yarra Valley location.
-
-    Great wine, super hospitality at Helen & Joey!`;
+  const name = 'Shiraz 2019';
+  const description = `Frisk of fyldig.
+  Røde og mørke bær, bløte tanniner og hint av vanilje.
+  
+  VMP nr: 12116901`;
 
   return(
-    <LeftElement name={name} description={description} image={shirazImg} />
+    <RightElement name={name} description={description} image={shirazImg} />
   );
 }
 

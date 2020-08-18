@@ -7,6 +7,7 @@ import {
   ButtonGroup,
   Button
 } from '@material-ui/core';
+import sagaLogo from '../media/saga_logo.jpg';
 
 const useStyles = makeStyles({
   navbar: {
@@ -40,7 +41,8 @@ function Navbar() {
       alignItems="center"
     >
       <Grid item xs={4}>
-        <Typography variant={'h5'} className={classes.logo}>Såga</Typography>
+        {/* <Typography variant={'h5'} className={classes.logo}>SÅGA</Typography> */}
+        <img src={sagaLogo} alt="sagaLogo" style={{ width: '64px', height: 'auto'}}/>
       </Grid>
       <Grid item xs={4} style={{textAlign: 'center', color: 'white'}}>
         <ButtonGroup variant="text" color="primary" aria-label="text primary button group">

@@ -1,16 +1,16 @@
 import React from 'react';
-import LeftElement from '../elements/LeftElement';
+import RightElement from '../elements/RightElement';
 import cabernetImg from '../../media/cabernet.png';
 
 function Cabernet() {
-  const name = 'Cabernet';
-  const description = `The 2018 Inara Cabernet sauvignon has it all – blackcurrant, a hint of mint, blackberry compôte and a touch of spice from the oak.
+  const name = 'Cabernet Sauvignon 2018';
+  const description = `Rik aroma og preg av mørke bær, bløte tanniner.
+  Hint av mynte of krydder.
   
-  The tannins are fine and firm, providing generous support to the concentrated fruit.  
-  While designed to be consumed early, the wine will continue to improve over the mid term.`;
+  VMP nr: 12116601`;
 
   return(
-    <LeftElement name={name} description={description} image={cabernetImg} />
+    <RightElement name={name} description={description} image={cabernetImg} />
   );
 }
 
