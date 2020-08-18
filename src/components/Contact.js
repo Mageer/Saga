@@ -1,35 +1,31 @@
 import React from 'react';
-import { Grid, Paper, Typography } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
+import ContactElement from './ContactElement';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import PhoneIcon from '@material-ui/icons/Phone';
+import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 
 const useStyles = makeStyles({
-  paper: {
-    padding: '50px',
-    textAlign: 'left',
-    backgroundColor: '#DFDFB2'
-  },
+  contactUs: {
+    textAlign: 'center',
+    color: 'white',
+    border: '1px solid red'
+  }
 });
 
 function About() {
   const classes = useStyles();
   return(
-    <Grid container>
-      <Grid item xs={4}></Grid>
-      <Grid item xs={4}>
-        <Paper elevation={2} className={classes.paper}>
-          <Typography variant={'h4'}>Contact</Typography>
-          <Typography variant={'b1'}>
-            <br/><br/>
-            For more information, please don't hesitate to send an email to:
-            <br/><br/>
-          </Typography>
-          <Typography variant={'b1'}>
-            contact@saga-wine-and-spirits.com
-          </Typography>
-        </Paper>  
-      </Grid>
-      <Grid item xs={4}></Grid>
-
+    <Grid
+      container
+      direction="row" 
+      justify="center" 
+      alignItems="center"
+    >
+      <ContactElement icon={<LocationOnIcon />} text={`Nydalen Allé 5, 0484 OSLO`} />
+      <ContactElement icon={<PhoneIcon />} text={`48 20 51 54`} />
+      <ContactElement icon={<AlternateEmailIcon />} text={`info@sagawinespirits.no`} />
     </Grid>
   );
 }
