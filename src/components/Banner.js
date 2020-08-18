@@ -1,7 +1,6 @@
 import React from 'react';
 import banner from '../media/banner.jpg';
 import { makeStyles } from '@material-ui/styles';
-import { Box } from '@material-ui/core';
 
 const useStyles = makeStyles({
   image: {

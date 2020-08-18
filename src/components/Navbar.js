@@ -40,18 +40,12 @@ function Navbar() {
       justify="center"
       alignItems="center"
     >
-      <Grid item xs={4}>
+      <Grid item xs={2}>
         {/* <Typography variant={'h5'} className={classes.logo}>SÅGA</Typography> */}
         <img src={sagaLogo} alt="sagaLogo" style={{ width: '64px', height: 'auto'}}/>
       </Grid>
-      <Grid item xs={4} style={{textAlign: 'center', color: 'white'}}>
+      <Grid item xs={8} style={{textAlign: 'center', color: 'white'}}>
         <ButtonGroup variant="text" color="primary" aria-label="text primary button group">
-          <Button>
-            <Link activeClass="active" to="shiraz" spy={true} smooth={true} duration={500}>
-              Shiraz
-            </Link>
-          </Button>
-
           <Button>
             <Link activeClass="active" to="pinotNoir" spy={true} smooth={true} duration={500}>
               Pinot Noir
@@ -63,9 +57,33 @@ function Navbar() {
               Cabernet
             </Link>
           </Button>
+
+          <Button>
+            <Link activeClass="active" to="shiraz" spy={true} smooth={true} duration={500}>
+              Shiraz
+            </Link>
+          </Button>
+
+          <Button>
+            <Link activeClass="active" to="blancDeBlanc" spy={true} smooth={true} duration={500}>
+              Blanc de Blanc
+            </Link>
+          </Button>
+
+          <Button>
+            <Link activeClass="active" to="waywardChildIlion" spy={true} smooth={true} duration={500}>
+              Wayward Child Ilion
+            </Link>
+          </Button>
+
+          <Button>
+            <Link activeClass="active" to="rose" spy={true} smooth={true} duration={500}>
+              Rosé
+            </Link>
+          </Button>
         </ButtonGroup>
       </Grid>
-      <Grid item xs={4} style={{ textAlign: 'right', paddingRight: '50px'}}>
+      <Grid item xs={2} style={{ textAlign: 'right', paddingRight: '50px'}}>
         <Button color='primary'>
             <Link activeClass="active" to="contact" spy={true} smooth={true} duration={500}>
               Contact
