@@ -1,7 +1,6 @@
 import React from 'react';
 import { Element,} from 'react-scroll';
 import { Grid } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
 import Navbar from './Navbar';
 import Banner from './Banner';
 import Shiraz from './wines/Shiraz';
@@ -12,11 +11,8 @@ import WaywardChildIlion from './wines/WaywardChildIloin';
 import Rose from './wines/Rose';
 import Footer from './Footer';
 
-const useStyles = makeStyles({
-});
 
 function Home() {
-  const classes = useStyles();
   return(
     <Grid container direction="row" justify="center" alignItems="center">
       <Navbar />

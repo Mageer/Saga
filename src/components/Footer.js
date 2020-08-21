@@ -16,7 +16,7 @@ const useStyles = makeStyles({
   },
   footer: {
     paddingTop: '20px',
-    height: '150px',
+    paddingBottom: '20px',
     backgroundColor: 'black',
   },
   upImage: {

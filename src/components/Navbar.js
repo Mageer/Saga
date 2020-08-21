@@ -3,7 +3,6 @@ import { Link } from 'react-scroll';
 import { makeStyles } from '@material-ui/core/styles';
 import {
   Grid,
-  Typography,
   ButtonGroup,
   Button
 } from '@material-ui/core';

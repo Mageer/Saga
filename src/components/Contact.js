@@ -1,21 +1,11 @@
 import React from 'react';
-import { Grid, Typography } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
+import { Grid } from '@material-ui/core';
 import ContactElement from './ContactElement';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import PhoneIcon from '@material-ui/icons/Phone';
 import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 
-const useStyles = makeStyles({
-  contactUs: {
-    textAlign: 'center',
-    color: 'white',
-    border: '1px solid red'
-  }
-});
-
 function About() {
-  const classes = useStyles();
   return(
     <Grid
       container
